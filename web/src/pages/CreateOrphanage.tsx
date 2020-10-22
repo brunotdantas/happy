@@ -98,7 +98,10 @@ export default function CreateOrphanage() {
         <form onSubmit={handleSubmit} className="create-orphanage-form">
           <fieldset>
             <legend>Dados</legend>
-
+            <div className="input-block">
+              <label>Clique no mapa abaixo para definir o local do orfanato</label>
+            </div>
+            
             <Map
               center={[-27.2092052, -49.6401092]}
               style={{ width: '100%', height: 280 }}
